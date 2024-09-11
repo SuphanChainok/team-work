@@ -11147,7 +11147,7 @@ hr.divider-light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-sskru.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../assets/img/bg-sskru.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11156,7 +11156,7 @@ header.masthead {
 header.comsci {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-comsci.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%), url("../assets/img/bg-comsci.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11298,6 +11298,452 @@ header.masthead h1, header.masthead .h1 {
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
 }
+
+/* สำหรับหน้าแรก */
+.no-scroll {
+  animation: none; /* ปิดการเคลื่อนไหว */
+}
+
+/* สำหรับหน้าเนื้อหา */
+.scroll {
+  display: inline-block; /* ทำให้สามารถเคลื่อนที่ได้ */
+  animation: scroll-left 10s linear infinite; /* การเคลื่อนไหว */
+}
+
+/* ตั้งค่าคอนเทนเนอร์หลัก */
+.container {
+  display: flex; /* ใช้ Flexbox */
+  
+justify-content: center; /* จัดกลางในแนวนอน */
+  width: 100%; /* ให้ครอบคลุมความกว้างทั้งหมด */
+}
+/* จัดตำแหน่งเนื้อหาในแนวนอน */
+.horizontal-container {
+  display: flex; /* ใช้ Flexbox */
+justify-content: center; /* จัดกลางในแนวนอน */
+align-items: center; /* จัดกลางในแนวตั้ง */
+padding: 2rem; /* เพิ่ม padding รอบๆ คอนเทนเนอร์ */
+white-space: nowrap; /* ป้องกันการตัดข้อความ */
+overflow: hidden; /* ซ่อนข้อความที่ล้นออกมานอกคอนเทนเนอร์ */
+}
+
+/* ตั้งค่าคอนเทนเนอร์หลัก */
+.container {
+    
+   
+  display: flex; /* ใช้ Flexbox */
+      
+     
+  justify-content: center; /* จัดกลางในแนวนอน */
+      width: 100%; /* ให้ครอบคลุมความกว้างทั้งหมด */
+  }
+  /* จัดตำแหน่งเนื้อหาในแนวนอน */
+/* ตั้งค่าคอนเทนเนอร์หลัก */
+.container {
+display: flex; /* ใช้ Flexbox */
+justify-content: center; /* จัดกลางในแนวนอน */
+width: 100%; /* ให้ครอบคลุมความกว้างทั้งหมด */
+}
+/* จัดตำแหน่งเนื้อหาในแนวนอน */
+.horizontal-container {
+display: flex; /* ใช้ Flexbox */
+justify-content: center; /* จัดกลางในแนวนอน */
+align-items: center; /* จัดกลางในแนวตั้ง */
+  padding: 2rem; /* เพิ่ม padding รอบๆ คอนเทนเนอร์ */
+white-space: normal; /* ให้ข้อความขึ้นบรรทัดใหม่ได้เมื่อยาวเกิน */
+overflow: visible; /* แสดงข้อความที่ยาวออกไปจากคอนเทนเนอร์ */
+  max-width: 100%; /* ทำให้คอนเทนเนอร์ขยายได้ตามความกว้างของข้อความ */
+}
+/* ตั้งค่าข้อความ */
+h1 {
+margin: 0; /* ลบ margin ของข้อความ */
+}
+/* ตั้งค่าคอนเทนเนอร์กริด */
+.grid-container {
+  display: grid; /* ใช้ Grid layout */
+grid-template-columns: repeat(4, 1fr); /* สร้าง 4 คอลัมน์ที่มีขนาดเท่ากัน */
+  gap: 1rem; /* ระยะห่างระหว่างไอเท็ม */
+padding: 1rem; /* เพิ่ม padding รอบๆ คอนเทนเนอร์ */
+}
+/* ตั้งค่าทุกไอเท็มในกริด */
+.grid-item {
+padding: 1rem; /* เพิ่ม padding รอบๆ ไอเท็ม */
+border: 1px solid #ccc; /* เพิ่มเส้นขอบ */
+border-radius: 4px; /* เพิ่มขอบมน */  
+box-sizing: border-box; /* คำนวณขนาดรวมของ padding และ border */
+}
+
+/* ตั้งค่าคอนเทนเนอร์หลัก */
+.content-container {
+display: flex; /* ใช้ Flexbox */
+flex-direction: column; /* จัดเรียงในแนวตั้ง */
+align-items: center; /* จัดกลางในแนวนอน */
+text-align: center; /* จัดกลางข้อความภายในคอนเทนเนอร์หลัก */
+}
+/* ตั้งค่าหัวข้อหลัก */
+.major-info {
+text-align: center; /* จัดกลางข้อความ */
+max-width: 1000px; /* กำหนดความกว้างสูงสุด */
+margin: 0 auto; /* จัดกลางคอนเทนเนอร์ในแนวนอน */
+    padding: 0 1rem; /* เพิ่ม padding ซ้ายและขวา */
+}
+/* ตั้งค่าหัวข้อ H2 */
+.major-info h2 {
+margin: 0; /* ลบ margin ของหัวข้อ */
+padding: 0; /* ลบ padding ของหัวข้อ */
+}
+/* ตั้งค่าพารากราฟ */
+.major-info p {
+margin-top: 0.5rem; /* เพิ่มระยะห่างระหว่างหัวข้อและพารากราฟ */
+}
+body {
+  margin: 0;
+padding: 0;
+}
+.row {
+display: flex;
+justify-content: center; /* จัดกึ่งกลางแนวนอน */
+}
+img {
+  max-width: 100%; /* ไม่ให้ภาพเกินขนาด container */
+height: auto; /* ให้ปรับความสูงตามอัตราส่วน */
+}
+
+.image-accordion {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.image-accordion__item {
+  position: relative;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  height: 300px; /* ปรับความสูงตามต้องการ */
+  transition: opacity 0.3s ease;
+}
+
+.image-accordion__item:hover .overlay {
+  opacity: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* เพิ่มสีทึบเพื่อให้ข้อความชัดเจน */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.read-more {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.title {
+  color: #fff;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0;
+}
+
+.desc {
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 10px;
+  padding: 0 10px;
+}
+h1.text-white.font-weight-bold {
+  white-space: nowrap; /* ป้องกันไม่ให้ข้อความถูกตัดบรรทัดอัตโนมัติ */
+}
+h1.text-white.font-weight-bold {
+  display: inline-block;
+  white-space: nowrap; /* ป้องกันไม่ให้ข้อความถูกตัดบรรทัดอัตโนมัติ */
+}
+
+/* ตั้งค่าให้โครงสร้างมีการจัดแนวกลาง */
+header .horizontal-container {
+    text-align: center;
+}
+
+.title {
+    color: #fff; /* สีของข้อความ */
+    font-weight: bold; /* ตัวหนา */
+}
+
+.welcome-section {
+    background-color: #f9f9f9; /* สีพื้นหลัง */
+    padding: 40px 20px; /* การเว้นระยะห่าง */
+    text-align: center; /* จัดแนวกลาง */
+}
+
+.sub-heading p {
+    font-size: 16px; /* ขนาดฟอนต์ */
+    line-height: 1.5; /* ระยะห่างบรรทัด */
+    color: #333; /* สีของข้อความ */
+}
+
+.line {
+    display: block;
+    width: 60%;
+    height: 2px;
+    background-color: #333; /* สีของเส้น */
+    margin: 20px auto; /* กำหนดระยะห่างบนและล่าง */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%; /* ปรับขนาดภาพให้พอดีกับความกว้างของหน้าจอ */
+    height: auto;
+}
+/* การจัดการกับ header */
+header .horizontal-container {
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    color: #fff; /* สีของข้อความ */
+    font-weight: bold; /* ตัวหนา */
+    margin: 0;
+}
+
+/* การจัดการกับ welcome-section */
+.welcome-section {
+    background-color: #f9f9f9; /* สีพื้นหลัง */
+    padding: 40px 20px; /* การเว้นระยะห่าง */
+    text-align: center; /* จัดแนวกลาง */
+}
+
+.welcome-section .title {
+    font-size: 24px; /* ขนาดฟอนต์ของหัวเรื่อง */
+    color: #333; /* สีของข้อความ */
+    margin-bottom: 20px;
+}
+
+.welcome-section .sub-heading p {
+    font-size: 16px; /* ขนาดฟอนต์ */
+    line-height: 1.5; /* ระยะห่างบรรทัด */
+    color: #333; /* สีของข้อความ */
+}
+
+.welcome-section .line {
+    display: block;
+    width: 60%;
+    height: 2px;
+    background-color: #333; /* สีของเส้น */
+    margin: 20px auto; /* กำหนดระยะห่างบนและล่าง */
+}
+
+/* การจัดการกับรูปภาพ */
+body .row img {
+    max-width: 100%; /* ปรับขนาดภาพให้พอดีกับความกว้างของหน้าจอ */
+    height: auto;
+    display: block;
+    margin: 0 auto; /* จัดแนวกึ่งกลาง */
+}
+/* การจัดการกับ header */
+header {
+    background-color: #333; /* สีพื้นหลังของ header */
+    padding: 20px 0; /* การเว้นระยะห่าง */
+    text-align: center; /* จัดแนวกึ่งกลาง */
+}
+
+header h1 {
+    color: #fff; /* สีของข้อความ */
+    font-weight: bold; /* ตัวหนา */
+    margin: 0; /* กำหนด margin เป็น 0 */
+}
+
+/* การจัดการกับรูปภาพ */
+main img {
+    max-width: 100%; /* ปรับขนาดภาพให้พอดีกับความกว้างของหน้าจอ */
+    height: auto; /* ให้ความสูงปรับอัตโนมัติตามความกว้าง */
+    display: block; /* แสดงภาพเป็นบล็อก */
+    margin: 0 auto; /* จัดแนวกึ่งกลาง */
+}
+/* เพิ่มระยะห่างของคอลัมน์ */
+.container .row {
+  margin-bottom: 30px; /* ระยะห่างระหว่างแถว */
+}
+
+.col-lg-4, .col-md-6, .col-sm-12 {
+  margin-bottom: 20px; /* ระยะห่างระหว่างคอลัมน์ */
+}
+
+/* ปรับความห่างในส่วนของรายละเอียดสาขา */
+.major-info {
+  margin-bottom: 20px; /* ระยะห่างด้านล่างของแต่ละบล็อค */
+}
+
+/* ปรับความห่างในส่วนของภาพ */
+.image-container img {
+  margin-bottom: 20px; /* ระยะห่างด้านล่างของภาพ */
+}
+/* ลบพื้นหลังสีขาวออกจาก .image-container */
+.image-container {
+  background-color: transparent; /* เปลี่ยนพื้นหลังเป็นโปร่งใส */
+}
+
+/* ลบพื้นหลังสีขาวและเส้นกรอบจาก .image-container */
+.image-container {
+  background-color: transparent; /* เปลี่ยนพื้นหลังเป็นโปร่งใส */
+  border: none; /* ลบเส้นกรอบ */
+  padding: 0; /* ลบการเยื้อง */
+}
+
+/* ลบพื้นหลังสีขาวและเส้นกรอบจาก .major-info */
+.major-info {
+  background-color: transparent; /* เปลี่ยนพื้นหลังเป็นโปร่งใส */
+  border: none; /* ลบเส้นกรอบ */
+  padding: 0; /* ลบการเยื้อง */
+}
+
+.custom-carousel-img {
+  max-width: 800px;
+  height: auto;
+  margin: 0 auto;
+}
+.custom-box-container {
+  margin: 20px;
+}
+
+.custom-box {
+  font-size: 24px; /* ปรับขนาดตัวหนังสือ */
+  text-align: center; /* จัดตำแหน่งตัวหนังสือให้อยู่กึ่งกลาง */
+  background-color: #f0f0f0; /* เปลี่ยนสีพื้นหลัง */
+  border-color: #d0d0d0; /* เปลี่ยนสีขอบถ้าต้องการ */
+  padding: 20px; /* เพิ่มระยะห่างภายในกรอบ */
+}
+
+.major-info {
+  margin: 20px 0;
+}
+
+.major-info h2 {
+  font-size: 28px; /* ขนาดตัวหนังสือของหัวข้อ */
+  text-align: center; /* จัดตำแหน่งหัวข้อให้อยู่กึ่งกลาง */
+}
+
+.major-info p {
+  font-size: 16px; /* ขนาดตัวหนังสือของเนื้อหา */
+  line-height: 1.5; /* ปรับความสูงของบรรทัด */
+  text-align: justify; /* จัดเรียงเนื้อหาแบบปกติ */
+}
+/* ขนาดและสไตล์สำหรับหัวข้อ */
+.header-box {
+  font-size: 1.5rem; /* ขนาดตัวอักษรใหญ่กว่า */
+  font-weight: bold;
+}
+
+/* ขนาดและสไตล์สำหรับข้อมูล */
+.content-box {
+  font-size: 1rem; /* ขนาดตัวอักษรปกติ */
+}
+
+/* ช่องว่างระหว่างหัวข้อและข้อมูล */
+.mt-3 {
+  margin-top: 1rem;
+}
+.custom-box {
+  font-size: 50px; /* ปรับขนาดตัวหนังสือที่นี่ตามต้องการ */
+  text-align: center; /* จัดตำแหน่งตัวหนังสือให้อยู่กึ่งกลาง */
+  line-height: 1.5; /* ปรับความสูงของบรรทัดเพื่อให้ตัวหนังสือไม่ติดกันเกินไป */
+  background-color: #f0f0f0; /* เปลี่ยนสีพื้นหลังที่นี่ */
+  border-color: #d0d0d0; /* เปลี่ยนสีขอบที่นี่ (ถ้าต้องการ) */
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 2em;
+}
+
+.map-container {
+  width: 100%;
+  height: 500px; /* ปรับขนาดตามต้องการ */
+  margin: 20px auto;
+  max-width: 1200px; /* ปรับขนาดสูงสุดตามต้องการ */
+}
+.custom-box-container {
+  max-width: 800px; /* กำหนดความกว้างสูงสุดของกล่องข้อมูล */
+  margin-left: 0; /* ไม่ให้มี margin ด้านซ้าย */
+  margin-right: auto; /* ให้มี margin ด้านขวา */
+}
+
+.header-box {
+  background-color: #ffffff; /* สีพื้นหลังของหัวข้อ */
+  padding: 15px; /* เพิ่ม padding ตามต้องการ */
+  border-radius: 0.25rem; /* มุมโค้งของกรอบ */
+  font-size: 1.25rem; /* ขนาดตัวอักษรของหัวข้อ */
+  font-weight: bold; /* ตัวอักษรหนา */
+}
+
+.content-box {
+  background-color: #f8f9fa; /* สีพื้นหลังของข้อมูล */
+  padding: 15px; /* เพิ่ม padding ตามต้องการ */
+  border-radius: 0.25rem; /* มุมโค้งของกรอบ */
+}
+
+.major-info p {
+  margin: 0; /* เอา margin ของพารากราฟออก */
+  color: #212529; /* สีของข้อความ */
+}
+.custom-box-container-right {
+    max-width: 800px; /* กำหนดความกว้างสูงสุดของกล่องข้อมูล */
+    margin-left: auto; /* ให้มี margin ด้านซ้าย */
+    margin-right: 0; /* ไม่ให้มี margin ด้านขวา */
+}
+
+.p-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* เพื่อจัดการให้เนื้อหาตรงกลาง */
+}
+
+.header-box {
+    background-color: #ffffff; /* สีพื้นหลังของหัวข้อ */
+    padding: 15px; /* เพิ่ม padding ตามต้องการ */
+    border-radius: 0.25rem; /* มุมโค้งของกรอบ */
+    font-size: 1.25rem; /* ขนาดตัวอักษรของหัวข้อ */
+    font-weight: bold; /* ตัวอักษรหนา */
+}
+
+.content-box {
+    background-color: #f8f9fa; /* สีพื้นหลังของข้อมูล */
+    padding: 15px; /* เพิ่ม padding ตามต้องการ */
+    border-radius: 0.25rem; /* มุมโค้งของกรอบ */
+    flex-grow: 1; /* ทำให้กล่องขยายเพื่อเติมความสูงที่เหลือ */
+}
+
+.major-info p {
+    margin: 0; /* เอา margin ของพารากราฟออก */
+    color: #212529; /* สีของข้อความ */
+}
+
+
+=======
 
 /* สำหรับหน้าแรก */
 .no-scroll {
